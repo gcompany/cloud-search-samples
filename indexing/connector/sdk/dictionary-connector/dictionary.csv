@@ -1,4 +1,22 @@
 # Each row is defined as: term, synonym1[, ..., synonymN]
+# Rows starting with # are considered comments and thus ignored. Blank lines are ignored as well
+# The relation term -> synonym(s) is one-way; add additional lines for the reverse relationship
+# Example, A, B, and C are synonyms of each other:
+# A, B, C
+# B, A, C
+# C, A, B
+
 scifi, science fiction, sci fi
+science fiction, scifi, sci fi
+sci fi, scifi, science fiction
+
 comedy, parody, humorous, tall tale
+parody, comedy, humorous, tall tale
+humorous, comedy, parody, tall tale
+tall tale, comedy, parody, humorous
+
 crime, gangster, hardboiled, legal thriller, murder mystery
+gangster, crime, hardboiled, legal thriller, murder mystery
+hardboiled, crime, gangster, legal thriller, murder mystery
+legal thriller, crime, gangster, hardboiled, murder mystery
+murder mystery, crime, gangster, hardboiled, legal thriller
